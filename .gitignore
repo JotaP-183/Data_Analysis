@@ -1,2 +1,9 @@
 #XRD reference files
 JCPDS-ICDD/*.pdf
+
+
+#packages and environments
+.vscode/
+.venv/
+env/
+venv/
