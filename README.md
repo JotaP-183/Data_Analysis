@@ -19,8 +19,6 @@ X-Ray Diffraction (XRD) analysis characterizes the crystallographic properties o
   - Generates visualizations of orientation distribution
   - Identifies preferred growth directions
 
-- **`Reach_TC_XRD_1.py`**: Python script for XRD analysis (standalone version)
-
 - **Data Files**:
   - `data/Training_BraggBrentano_1hr_1.xrdml`: XRD measurement in XML format
   - `data/Training_BraggBrentano_1hr_1.ASC`: XRD measurement in ASCII format
@@ -154,7 +152,6 @@ Data_Analysis/
 ├── README.md                           # This file
 ├── SCAPS_Simulations.ipynb             # SCAPS simulation analysis notebook
 ├── Texture_Coefficient_Analysis.ipynb  # XRD texture coefficient notebook
-├── Reach_TC_XRD_1.py                   # Standalone XRD analysis script
 ├── data/                               # Data folder
 │   ├── CdS3_IV Graph_1.xlsx            # Experimental J-V measurements
 │   ├── CdS3_IV_scaps.xlsx              # SCAPS simulation results
