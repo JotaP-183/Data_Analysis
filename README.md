@@ -404,9 +404,3 @@ INVERT_EXP_CURRENT = True  # Sign convention for current
    - Topics: Device physics, J-V characteristics, performance metrics (Voc, Jsc, FF, efficiency)
 
 ---
-
-## Contact & Support
-
-For questions or issues related to this analysis, please refer to the individual notebook documentation and comments within the code.
-
-**Last Updated**: April 2026
