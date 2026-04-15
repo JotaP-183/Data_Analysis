@@ -79,7 +79,7 @@ UV-Visible spectroscopy analysis determines the optical band gap ($E_g$) of semi
 
 The absorption coefficient is calculated from transmittance and reflectance using:
 
-$$\alpha_{comp} = \frac{1}{t} \cdot \ln \left( \frac{(1-R)^2}{T} + \sqrt{\frac{(1-R)^4}{4T^2} + R^2} \right) \quad \text{(1)}$$
+$$\alpha = \frac{1}{t} \cdot \ln \left( \frac{(1-R)^2}{T} + \sqrt{\frac{(1-R)^4}{4T^2} + R^2} \right) \quad \text{(1)}$$
 
 where:
 - $\alpha$ = absorption coefficient (cm⁻¹)
