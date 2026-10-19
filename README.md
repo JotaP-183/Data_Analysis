@@ -2,11 +2,12 @@
 
 ## Overview
 
-This repository contains comprehensive data analysis workflows for photovoltaic devices, combining three key analysis approaches:
+This repository contains comprehensive data analysis workflows for photovoltaic devices, combining four key analysis approaches:
 
 1. **X-Ray Diffraction (XRD) Analysis**: Texture coefficient determination and crystallographic characterization of thin-film samples
-2. **UV-Visible Spectroscopy (UV-Vis)**: Optical band gap determination and absorption coefficient analysis
-3. **Device Performance Modeling**: Comparison of experimental J-V (current density-voltage) measurements with SCAPS 1D numerical simulations
+2. **UV-Visible Spectrophotometry (UV-Vis)**: Optical band gap determination and absorption coefficient analysis
+3. **Solar Cell performance analysis**: EQE and JV curve analysis
+4. **Device Performance Modeling**: Comparison of experimental J-V (current density-voltage) measurements with SCAPS 1D numerical simulations
 
 ## 1. XRD Data Analysis
 
