@@ -15,7 +15,7 @@ This repository contains comprehensive data analysis workflows for photovoltaic 
 X-Ray Diffraction (XRD) analysis characterizes the crystallographic properties of the absorber layer in photovoltaic devices. The analysis focuses on determining the **texture coefficient** of preferred crystallographic orientations, which directly impacts device performance and light absorption characteristics.
 
 ### Key Files
-- **`Texture_Coefficient_Analysis.ipynb`**: Main analysis notebook for XRD texture coefficient determination
+- **`TC_comparison.ipynb`**: Main analysis notebook for XRD texture coefficient determination
   - Reads XRD diffraction patterns from experimental data
   - Calculates texture coefficients for major crystallographic planes
   - Generates visualizations of orientation distribution
@@ -56,20 +56,25 @@ UV-Visible spectrophotometry analysis determines absorption and the optical band
   - Calculates absorption coefficient from optical properties
   - Applies Savitzky-Golay smoothing to reduce noise
   - Determines both direct and indirect band gaps using Tauc plots
-  - Performs Sigmoid-Boltzmann fitting for alternative band gap estimation
   - Generates SCAPS absorption files (.abs) for device simulations
 
 ### Absorption Coefficient
 
 The absorption coefficient is calculated from transmittance and reflectance using:
 
-$$\alpha = \frac{1}{t} \cdot \ln \left( \frac{(1-R)^2}{T} + \sqrt{\frac{(1-R)^4}{4T^2} + R^2} \right) \quad \text{(1)}$$
+- **If αd >> 1** (high absorption regime): $R_{\text{meas}} \approx R$, which means the simple approximation $\alpha = -\frac{1}{d}\ln\left[\frac{T_{\text{meas}}}{(1-R_{\text{meas}})^2}\right]$.
 
-where:
-- $\alpha$ = absorption coefficient (cm⁻¹)
-- $t$ = thickness of the film (cm)
-- $T$ = transmittance (fraction)
-- $R$ = reflectance (fraction)
+- **If αd ≤ 1** (low absorption regime):
+$$\begin{cases}
+T_{\text{meas}} = \frac{(1-R)^2 e^{-\alpha d}}{1 - R^2 e^{-2\alpha d}} \\
+e^{-2\alpha d} = \frac{R_{\text{meas}} - R}{R(1 - 2R + R R_{\text{meas}} )}
+\end{cases}$$
+
+where α and R can be determined simultaneously and:
+- **$T_{\text{meas}}$** is the measured transmittance
+- **R** is the "reflection coefficient"
+- **α** is the absorption coefficient (cm⁻¹)
+- **d** is the thickness of the film (cm)
 
 ### Photon Energy Calculation
 
@@ -118,7 +123,7 @@ This analysis compares experimental photovoltaic device performance (measured J-
 - Optimize device architecture
 
 ### Key Files
-- **`SCAPS_Simulations.ipynb`**: Comprehensive analysis notebook featuring:
+- **`SCAPS_Simulations_iv_files.ipynb`**: Comprehensive analysis notebook featuring:
   1. Configuration of target performance metrics
   2. Reading and processing experimental J-V data
   3. SCAPS simulation data parsing and extraction
@@ -220,25 +225,27 @@ This analysis evaluates measured solar-cell performance using external quantum e
 ## References
 
 ### UV-Vis Analysis & Band Gap Determination
-1. **Savitzky-Golay Filter**:
+1. **Absorption deduction**:
+   - David C. Look, Jacob H. Leach; On the accurate determination of absorption coefficient from reflectanceand transmittance measurements: Application to Fe-doped GaN. J. Vac. Sci. Technol. B 1 July 2016; 34 (4): 04J105.
+   - Purpose: absorption coefficient and reflecctance coefficient deduction.
+2. **Savitzky-Golay Filter**:
    - Savitzky, A. & Golay, M. J. E. (1964). Smoothing and differentiation of data by simplified least squares procedures. Analytical Chemistry, 36(8), 1627-1639.
-   - Use case: Digital signal processing for noise reduction while preserving slopes and features in spectroscopy data
+   - Purpose: Digital signal processing for noise reduction while preserving slopes and features in spectroscopy data.
 
 ### SCAPS Software & Device Simulation
 1. **SCAPS 1D Software**: 
    - Website: https://scaps.elis.ugent.be/
-   - Developer: Ghent University
-   - Purpose: Numerical simulation of thin-film photovoltaic devices
+   - Purpose: Numerical simulation of thin-film photovoltaic devices.
 
 ### XRD & Crystallography
 1. **Texture Coefficient Analysis**:
    - Cullity, B. D. (1978). Elements of X-ray Diffraction (3rd ed.). Addison-Wesley.
-   - Application: Quantifying preferred crystallographic orientations in thin films
+   - Purposee: Quantifying preferred crystallographic orientations in thin films.
 
 ### Photovoltaic Device Physics
 1. **Solar Cell Characterization**:
    - Green, M. A. (1982). Solar Cells: Operating Principles, Technology and Systems Applications. University of New South Wales Press.
    - Shockley, W. & Queisser, H. J. (1961). Detailed balance limit of efficiency of p-n junction solar cells. Journal of Applied Physics, 32(3), 510-519.
-   - Topics: Device physics, J-V characteristics, performance metrics (Voc, Jsc, FF, efficiency)
+   - Purpose: Device physics, J-V characteristics, performance metrics (Voc, Jsc, FF, efficiency) determination.
 
 ---
