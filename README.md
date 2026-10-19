@@ -126,13 +126,6 @@ This analysis compares experimental photovoltaic device performance (measured J-
   5. Shape-based comparison (Mean Squared Error analysis)
   6. Summary comparison showing best matching simulations
 
-- **Data Files**:
-  - `data/CdS3_IV Graph_1.xlsx`: Experimental J-V curve measurements (raw data)
-  - `data/CdS3_IV_scaps.xlsx`: SCAPS 1D simulation results containing:
-    - Voltage (V) and current density (mA/cm²) points
-    - Extracted parameters: Voc, Jsc, FF (%), η (%)
-    - Multiple simulation scenarios with varied device parameters
-
 ### J-V Curve Analysis Theory
 
 #### Single-Diode Model
