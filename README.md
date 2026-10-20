@@ -71,10 +71,12 @@ $$
 
 - **If αd ≤ 1** (low absorption regime):
 
-$$\begin{cases}
-T_{\text{meas}} = \frac{(1-R)^2 e^{-\alpha d}}{1 - R^2 e^{-2\alpha d}} \\
-e^{-2\alpha d} = \frac{R_{\text{meas}} - R}{R(1 - 2R + R R_{\text{meas}} )}
-\end{cases}$$
+$$
+\begin{cases}
+T_{\text{meas}} = \dfrac{(1-R)^2 e^{-\alpha d}}{1-R^2 e^{-2\alpha d}} \\
+e^{-2\alpha d} = \dfrac{R_{\text{meas}}-R}{R(1-2R+R R_{\text{meas}})}
+\end{cases}
+$$
 
 where α and R can be determined simultaneously and:
 - **$T_{\text{meas}}$** is the measured transmittance
