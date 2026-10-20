@@ -7,3 +7,8 @@ JCPDS-ICDD/*.pdf
 .venv/
 env/
 venv/
+
+#file paths
+__pycache__/
+patch_notebooks.py/
+projects_paths.py/
