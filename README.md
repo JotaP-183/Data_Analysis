@@ -14,7 +14,7 @@ This repository contains comprehensive data analysis workflows for photovoltaic 
 ### Purpose
 X-Ray Diffraction (XRD) analysis characterizes the crystallographic properties of the absorber layer in photovoltaic devices. The analysis focuses on determining the **texture coefficient** of preferred crystallographic orientations, which directly impacts device performance and light absorption characteristics.
 
-### Key Files
+### Key File
 - **`TC_comparison.ipynb`**: Main analysis notebook for XRD texture coefficient determination
   - Reads XRD diffraction patterns from experimental data
   - Calculates texture coefficients for major crystallographic planes
@@ -49,7 +49,7 @@ where:
 UV-Visible spectrophotometry analysis determines absorption and the optical band gap ($E_g$) of semiconductor materials from transmission and reflection measurements. The analysis employs the **Tauc Plot Method** for the linear extrapolation of absorption data to determine band gap energy.
 
 
-### Key Files
+### Key File
 - **`UV_Vis_analysis.ipynb`**: Main analysis notebook for band gap determination
   - Reads UV-Vis data (wavelength, transmittance, reflectance) from Excel files
   - Calculates absorption coefficient from optical properties
@@ -79,6 +79,7 @@ e^{-2\alpha d} = \dfrac{R_{\text{meas}}-R}{R(1-2R+R R_{\text{meas}})}
 $$
 
 where α and R can be determined simultaneously and:
+- **$R_{\text{meas}}$** is the measured reflectance
 - **$T_{\text{meas}}$** is the measured transmittance
 - **R** is the "reflection coefficient"
 - **α** is the absorption coefficient (cm⁻¹)
@@ -130,7 +131,7 @@ This analysis compares experimental photovoltaic device performance (measured J-
 - Understand dominant loss mechanisms
 - Optimize device architecture
 
-### Key Files
+### Key File
 - **`SCAPS_Simulations_iv_files.ipynb`**: Comprehensive analysis notebook featuring:
   1. Configuration of target performance metrics
   2. Reading and processing experimental J-V data
@@ -162,7 +163,7 @@ where:
 
 1. **Open Circuit Voltage ($V_{oc}$)**:
    - Maximum voltage at zero current
-   - Determined by: $V_{oc} = \frac{nk_BT}{q}\ln\left(\frac{J_L}{J_0} + 1\right)$
+   - $V_{oc} = \frac{nk_BT}{q}\ln\left(\frac{J_L}{J_0} + 1\right)$
 
 2. **Short Circuit Current Density ($J_{sc}$)**:
    - Maximum current at zero voltage
