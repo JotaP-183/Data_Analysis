@@ -70,6 +70,7 @@ $$
 $$
 
 - **If αd ≤ 1** (low absorption regime):
+
 $$\begin{cases}
 T_{\text{meas}} = \frac{(1-R)^2 e^{-\alpha d}}{1 - R^2 e^{-2\alpha d}} \\
 e^{-2\alpha d} = \frac{R_{\text{meas}} - R}{R(1 - 2R + R R_{\text{meas}} )}
