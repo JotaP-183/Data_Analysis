@@ -88,7 +88,7 @@ where α and R can be determined simultaneously and:
 
 The photon energy (in eV) is calculated from wavelength using:
 
-$$h\nu = \frac{hc}{\lambda} \cdot \frac{1}{e} \quad \text{(2)}$$
+$$h\nu = \frac{hc}{\lambda} \cdot \frac{1}{e} \quad $$
 
 where:
 - $h$ = Planck's constant (6.626 × 10⁻³⁴ J·s)
@@ -100,7 +100,7 @@ where:
 
 The Tauc plot uses the relation:
 
-$$(h\nu \cdot \alpha)^{1/\gamma} = B(h\nu - E_g) \quad \text{(3)}$$
+$$(h\nu \cdot \alpha)^{1/\gamma} = B(h\nu - E_g) \quad $$
 
 where:
 - $\gamma$ = transition type (2 for indirect, 1/2 for direct)
