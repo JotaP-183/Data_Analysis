@@ -46,9 +46,8 @@ where:
 ## 2. UV-Visible Spectrophotometry (UV-Vis) Analysis
 
 ### Purpose
-UV-Visible spectrophotometry analysis determines absorption and the optical band gap ($E_g$) of semiconductor materials from transmission and reflection measurements. The analysis employs two complementary methods:
-- **Tauc Plot Method**: Linear extrapolation of absorption data to determine band gap energy
-- **Sigmoid-Boltzmann Fitting**: Smooth fitting approach using sigmoid function for improved accuracy
+UV-Visible spectrophotometry analysis determines absorption and the optical band gap ($E_g$) of semiconductor materials from transmission and reflection measurements. The analysis employs the **Tauc Plot Method** for the linear extrapolation of absorption data to determine band gap energy.
+
 
 ### Key Files
 - **`UV_Vis_analysis.ipynb`**: Main analysis notebook for band gap determination
@@ -62,7 +61,13 @@ UV-Visible spectrophotometry analysis determines absorption and the optical band
 
 The absorption coefficient is calculated from transmittance and reflectance using:
 
-- **If αd >> 1** (high absorption regime): $R_{\text{meas}} \approx R$, which means the simple approximation $\alpha = -\frac{1}{d}\ln\left[\frac{T_{\text{meas}}}{(1-R_{\text{meas}})^2}\right]$.
+- **If αd >> 1** (high absorption regime): $R_{\text{meas}} \approx R$, which means the simple approximation:
+
+$$
+\alpha = -\frac{1}{d}\ln\left[
+\frac{T_{\text{meas}}}{(1-R_{\text{meas}})^2}
+\right]
+$$
 
 - **If αd ≤ 1** (low absorption regime):
 $$\begin{cases}
