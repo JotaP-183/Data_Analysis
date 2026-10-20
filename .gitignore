@@ -10,5 +10,5 @@ venv/
 
 #file paths
 __pycache__/
-patch_notebooks.py/
-projects_paths.py/
+patch_notebooks.py
+project_paths.py
