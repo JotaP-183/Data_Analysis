@@ -212,6 +212,8 @@ $$\text{MSE} = \frac{1}{N}\sum_{i=1}^{N}\left(J_i^{exp} - J_i^{sim}(V_i)\right)^
 
 ---
 
+This repository was developed with the assistance of IA.
+
 ## 4. Solar Cell Performance: EQE and J-V Curve Analysis
 
 ### Purpose
