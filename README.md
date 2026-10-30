@@ -212,8 +212,6 @@ $$\text{MSE} = \frac{1}{N}\sum_{i=1}^{N}\left(J_i^{exp} - J_i^{sim}(V_i)\right)^
 
 ---
 
-This repository was developed with the assistance of IA.
-
 ## 4. Solar Cell Performance: EQE and J-V Curve Analysis
 
 ### Purpose
@@ -232,6 +230,8 @@ This analysis evaluates measured solar-cell performance using external quantum e
 - Performance comparisons, boxplots, and J-V curves for selected high-performing cells
 
 ---
+
+This repository was developed with the assistance of IA.
 
 ## References
 
