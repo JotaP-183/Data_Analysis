@@ -12,3 +12,4 @@ venv/
 __pycache__/
 patch_notebooks.py
 project_paths.py
+.gitignore
