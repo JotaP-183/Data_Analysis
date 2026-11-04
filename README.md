@@ -231,7 +231,7 @@ This analysis evaluates measured solar-cell performance using external quantum e
 
 ---
 
-This repository was developed with the assistance of IA.
+This repository was developed with the assistance of AI.
 
 ## References
 
